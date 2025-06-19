@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>contact — black dice</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      background-color: #000;
+      color: #fff;
+      font-family: serif;
+      text-transform: lowercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      font-size: 1.5rem;
+    }
+    img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      text-transform: lowercase;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      width: 100%;
+    }
+    input, textarea {
+      background: #111;
+      border: 1px solid #555;
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #888;
+    }
+    button {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 1.25rem;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <img src="img/dice.png" alt="dice logo" />
+  <h1>contact</h1>
+  <form action="https://formsubmit.co/sam@blackdicerecords.com" method="POST">
+    <input type="text" name="name" placeholder="your name" required />
+    <input type="email" name="email" placeholder="your email" required />
+    <textarea name="message" rows="6" placeholder="your message" required></textarea>
+    <button type="submit">send</button>
+  </form>
+</body>
+</html>
